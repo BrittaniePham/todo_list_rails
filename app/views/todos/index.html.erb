@@ -1,8 +1,8 @@
-<h1>Todo Lists</h1>
-<p><%= link_to 'New List', new_todo_path %></p>
+<h1>Todo List</h1>
+<p><%= link_to 'Create a New Task', new_todo_path %></p>
 <% @todos.each do |todo| %>
   <h2><%= todo.title %></h2>
-  <%= link_to 'Show list', todo_path(todo) %>
-  <%= link_to 'Edit list', edit_todo_path(todo) %>
-  <%= link_to 'Delete list', todo, method: :delete %>
+  <%= link_to 'Show task', todo_path(todo) %>
+  <%= link_to 'Edit task', edit_todo_path(todo) %>
+  <%= link_to 'Delete task', todo, method: :delete %>
 <% end %>
