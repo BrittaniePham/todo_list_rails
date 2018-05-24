@@ -3,4 +3,5 @@
 <% @todos.each do |todo| %>
   <h2><%= todo.title %></h2>
   <%= link_to 'Show list', todo_path(todo) %>
+  <%= link_to 'Edit list', edit_todo_path(todo) %>
 <% end %>
