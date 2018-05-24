@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+20.times do
+  Todo.create(
+    title: Faker::RickAndMorty.character,
+    body: Faker::RickAndMorty.quote,
+    completed: false
+  )
+end
+
+puts 'seeded'
