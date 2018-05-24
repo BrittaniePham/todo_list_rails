@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  root 'static_pages#home'
-  get '/about', to: 'static_pages#about'
+  root 'todos#home'
   resources :todos #automatically includes all basic CRUD routes
-
 end
